@@ -25,7 +25,7 @@ jobs:
       - name: print current directory path
         run: pwd && ls -al && echo "Hello, world!" >> readme.md
       - name: list && cat readme.md
-        run: ls -al
+        run: ls -al && cat readme.md
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
