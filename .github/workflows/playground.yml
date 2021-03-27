@@ -23,8 +23,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: print current directory path
-        run: pwd && ls -al && touch readme.md
-      - name: list
+        run: pwd && ls -al && echo "Hello, world!" >> readme.md
+      - name: list && cat readme.md
         run: ls -al
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
