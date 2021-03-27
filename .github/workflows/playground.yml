@@ -23,13 +23,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: print current directory path
-        run: pwd
+        run: pwd && ls -al
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
       - name: print current directory path again
-        run: pwd
+        run: pwd && ls -al
 
       - name: Run a one-line script
         run: echo Hello, world!
